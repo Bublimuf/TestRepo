@@ -4,7 +4,7 @@
   "description": "Fizzbuzz with travis integration, test coverage, and style checking",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha ./test/*",
+    "test": " nyc ./node_modules/mocha/bin/mocha ./test/*",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
   },
   "repository": {
@@ -15,11 +15,11 @@
     "acquit": "0.0.3",
     "coveralls": "2.10.0",
     "gulp": "3.8.10",
-    "gulp-mocha": "2.0.0",
     "gulp-jscs": "1.4.0",
+    "gulp-mocha": "2.0.0",
     "istanbul": "0.3.5",
     "jscs": "1.9.0",
-    "mocha": "2.0.0"
+    "mocha": "^2.0.0"
   },
   "jscsConfig": {
     "preset": "airbnb",
@@ -27,5 +27,8 @@
     "disallowMultipleVarDecl": true
   },
   "author": "Valeri Karpov <val@karpov.io>",
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "dependencies": {
+    "nyc": "^11.8.0"
+  }
 }
