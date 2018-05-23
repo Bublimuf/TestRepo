@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "acquit": "0.0.3",
-    "coveralls": "2.10.0",
+    "coveralls": "^2.10.0",
     "gulp": "3.8.10",
     "gulp-jscs": "1.4.0",
     "gulp-mocha": "2.0.0",
