@@ -16,4 +16,7 @@ module.exports = function(n) {
   return '' + n;
 };
 
-var abc = 1;
+var abc = function() {
+	console.log("sem nevlezem");
+};
+
