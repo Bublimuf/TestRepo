@@ -15,3 +15,5 @@ module.exports = function(n) {
 
   return '' + n;
 };
+
+var abc = 1;
